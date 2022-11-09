@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Registro Animales</title>
+</head>
+<body>
+
+<h3>Ingrese informacion del animal:</h3>
+    <form class ="formulario" action="/mongoose/nuevo" method="post">
+
+            <label for="nombre">Nombre Animal: </label>
+            <input type="text" name="introducir_nombre"> 
+        
+            <label>Edad Animal:</label>            
+            <input type="text" name="introducir_edad" >
+
+            <label>Tipo Animal:</label>            
+            <input type="text" name="introducir_tipo" >
+           
+            <button>Registrar</button>
+</form>
+
+ 
+<h5>
+    <%= mensaje %>
+</h5>
+
+    
+</body>
+</html>

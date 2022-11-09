@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mongoose</title>
+</head>
+<body>
+  
+
+    <h1>Informacion de la manada: </h1>
+
+    
+        <% for (var x in animales) { %>
+         
+            <section class="animal"> 
+                <h4>Informacion de: <%= animales[x].nombre %></h4>
+                <a href="/detalle/<%= animales[x].id %>">detalles</a>
+                <a href="/destruir/<%= animales[x].id %>">eliminar</a>
+                <a href="/editar/<%= animales[x].id %>">editar</a>
+                
+            </section>  
+        
+        <% } %>
+      
+    
+  
+</body>
+</html>

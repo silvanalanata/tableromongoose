@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Editar</title>
+</head>
+<body>
+  
+
+    <h1>Informacion a Editar <%= animales.nombre %> : </h1>     
+         
+            <section class="animal"> 
+                <h4>Informacion de: <%= animales.nombre %></h4>
+               
+                
+            </section>  
+        
+            <form class ="formulario" action="/editar/<%= animales._id %>" method="post">
+
+                <label for="nombre">Nombre Animal: </label>
+                <input type="text" name="introducir_nombre" value="<%= animales.nombre %>"> 
+            
+                <label>Edad Animal:</label>            
+                <input type="text" name="introducir_edad" value="<%= animales.edad %>" >
+    
+                <label>Tipo Animal:</label>            
+                <input type="text" name="introducir_tipo" value=" <%= animales.tipo %>" >
+               
+                <button>Actualizar</button>
+    </form>
+    
+     
+ 
+  
+</body>
+</html>
